@@ -1,0 +1,48 @@
+/* Style de base */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: #b22222; /* Rouge de Noël */
+    overflow: hidden; /* Cache le débordement des cadeaux */
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+main {
+    text-align: center;
+}
+
+.wishlist {
+    list-style: none;
+    padding: 0;
+}
+
+.wishlist li {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour le canvas */
+#bouncing-gifts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Évite d'interférer avec les clics */
+}
