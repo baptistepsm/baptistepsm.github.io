@@ -11,13 +11,21 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
+<div class="music-controller">
+    <button id="play-pause-btn">⏸️</button>
+    <button id="next-btn">⏭️</button>
+    <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1">
+</div>
+<audio id="audio-player" autoplay loop>
+    <source src="medias/lea-music.mp3" type="audio/mpeg">
+    Votre navigateur ne supporte pas la lecture audio.
+</audio>
 <header>
     <canvas id="bouncing-gifts"></canvas>
     <h1>🎄  Liste de Noël de Léa 💅🎄</h1>
-    <nav>
-        <a href="index.html" class="tab">Baptiste</a>
-        <a href="lea.html" class="tab active">Léa</a>
-    </nav>
+    <div class="back-to-home">
+        <a href="index.html">🏠</a>
+    </div>
 </header>
 <main>
 </main>

@@ -55,3 +55,63 @@ function animate() {
 
 // Démarrer l'animation
 animate();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const audioPlayer = document.getElementById('audio-player');
+    const playPauseBtn = document.getElementById('play-pause-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const volumeSlider = document.getElementById('volume-slider');
+
+    const playlist = ['../medias/baptiste-music.mp3', '../medias/lea-music.mp3'];
+    let currentTrackIndex = 0;
+    audioPlayer.volume = 0.5;
+
+    // Lecture / Pause
+    playPauseBtn.addEventListener('click', () => {
+        if (audioPlayer.paused) {
+            audioPlayer.play().catch(error => {
+                console.error("Erreur pendant la lecture :", error);
+            });
+            playPauseBtn.textContent = '⏸️';
+        } else {
+            audioPlayer.pause();
+            playPauseBtn.textContent = '▶️';
+        }
+    });
+
+    // Suivant
+    nextBtn.addEventListener('click', () => {
+        currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
+        audioPlayer.src = playlist[currentTrackIndex];
+
+        // Attendre que la source soit prête
+        audioPlayer.addEventListener('canplay', () => {
+            audioPlayer.play().catch(error => {
+                console.error("Erreur pendant la lecture :", error);
+            });
+        });
+        audioPlayer.load();
+        playPauseBtn.textContent = '⏸️';
+    });
+
+    // Réglage du volume
+    volumeSlider.addEventListener('input', () => {
+        audioPlayer.volume = volumeSlider.value;
+    });
+
+    // Gestion des erreurs de lecture
+    audioPlayer.addEventListener('error', () => {
+        console.error("Erreur : le fichier audio n'a pas pu être lu.");
+    });
+});
+
+
+
+function playMusic(audioFile) {
+    const audioPlayer = document.getElementById('audio-player');
+    audioPlayer.src = audioFile;
+    audioPlayer.play();
+}
+
+
+
