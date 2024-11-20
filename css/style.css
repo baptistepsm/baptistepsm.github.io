@@ -25,16 +25,16 @@ nav {
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 20px;
-    background-color: #4caf50;
+    background-color: #207e22;
     transition: background-color 0.3s ease;
 }
 
 .tab.active {
-    background-color: #2e7d32;
+    background-color: #1a6020;
 }
 
 .tab:hover {
-    background-color: #66bb6a;
+    background-color: #20a636;
 }
 
 main {
@@ -80,19 +80,9 @@ footer {
 
 /* Carte cadeau */
 .gift-card {
-    background-color: #fff;
-    color: #000;
-    border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 300px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gift-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Image */
@@ -120,13 +110,13 @@ footer {
     display: inline-block;
     margin: 10px 0 15px;
     padding: 10px 20px;
-    background-color: #4caf50;
+    background-color: #207e22;
     color: #fff;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 3px;
     transition: background-color 0.3s ease;
 }
 
 .gift-link:hover {
-    background-color: #388e3c;
+    background-color: #20a636;
 }
