@@ -286,6 +286,7 @@ body {
 }
 
 
+
 @media (max-width: 1100px) {
     #index-title {
         font-size: 4rem; /* Réduisez la taille du titre */
@@ -343,5 +344,9 @@ body {
         display: none;
     }
 
+    #list-title {
+        text-align: center;
+        font-size: 1.3rem;
+    }
 
 }
