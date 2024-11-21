@@ -144,7 +144,7 @@ body {
     color: #ffffff;
     border-radius: 3px;
     padding: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 2rem;
     font-family: 'Dancing Script', cursive;
 }
@@ -275,11 +275,11 @@ body {
 
 #index-title {
     text-align: center;
-    padding: 6px;
     font-family: 'Dancing Script', cursive;
     font-size: 6rem;
     color: #ffffff;
     font-weight: bold;
+    margin: unset;
 }
 .smaller-text {
     font-size: 4.5rem; /* Réduit de 1rem */
@@ -289,13 +289,27 @@ body {
 
 @media (max-width: 1100px) {
     #index-title {
-        font-size: 4rem; /* Réduisez la taille du titre */
+        font-size: 2.5rem; /* Réduisez la taille du titre */
+    }
+    .smaller-text {
+        font-size: 2rem; /* Réduit de 1rem */
     }
 
     .button-container {
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .welcome-box {
+        margin-bottom: 0;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%; /* Rond */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .back-to-home {
