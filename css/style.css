@@ -285,6 +285,28 @@ body {
     font-size: 4.5rem; /* Réduit de 1rem */
 }
 
+/* Barre avec titre de catégorie */
+.category-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.category-title span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.category-title .line {
+    flex-grow: 0.4;
+    height: 4px;
+    background-color: #b6b6b6;
+}
+
 
 
 @media (max-width: 1100px) {
