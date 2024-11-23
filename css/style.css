@@ -306,7 +306,14 @@ body {
     height: 4px;
     background-color: #b6b6b6;
 }
-
+.thanks-box {
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
 
 
 @media (max-width: 1100px) {
